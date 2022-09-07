@@ -22,12 +22,21 @@ function changeBodyColorNum() {
   const numhx = parseInt(col, 16)
   out(num)
   out(numhx)
-  const hexcol = new Number(numhx).toString(16)
+  let hexcol = new Number(numhx).toString(16)
+  if (hexcol.length == 2) {hexcol = "0000" + hexcol}
+  if (hexcol.length == 4) {hexcol = "00" + hexcol}
   out(hexcol)
   bdy.style.backgroundColor = "#" + hexcol
 }
 
+function changeBodyColorKey(key) {
+  out(key)
+  changeBodyColorNum();
+}
 
 pbSetColor.addEventListener('click', changeBodyColor)
 pbSetColorNum.addEventListener('click', changeBodyColorNum)
+
+inpColor.addEventListener('input', changeBodyColorKey)
+
 

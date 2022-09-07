@@ -23,8 +23,8 @@ function increaseFontSize(btn) {
 //pbIncrease.addEventListener('click'), (btn) => increaseFontSize(btn))
 
 function testKeyPressed(event) {
-  out(event)
-  out(event.key)
+  //out(event)
+  //out(event.key)
   let k = event.key
   if (k == 'd') {
     out("dummy")
