@@ -13,6 +13,8 @@ out(arr)
 arr = [1, 5, "hello", 5.5 , 4>3, [1,2], {"firstName" : "Erik"}, null]
 out(arr)
 showTypes(arr)
-showTypes(5)
 out("hello there")
 
+let aa
+arr.push(aa)
+showTypes(arr)
