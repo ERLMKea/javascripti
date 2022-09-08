@@ -26,8 +26,18 @@ function testKeyPressed(event) {
   //out(event)
   //out(event.key)
   let k = event.key
-  if (k == 'd') {
-    out("dummy")
+  out(k);
+  switch (k.key) {
+    case 'Escape':
+      lineFirst.style.fontSize = 10 + 'px'
+      //escapePressed(k);
+
+      break;
+    case 'F10':
+      increaseFontSize(k);
+      break;
+    default:
+      out("ikke noget vigtigt k=" + k.key);
   }
 }
 
