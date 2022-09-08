@@ -6,11 +6,45 @@ body {
   border: none;
   background-color: #64e340;
   color: #4f72cb;
-  font-size: 8px;
+  font-size: 8;
   font-family: inherit;
   padding: 1rem 1rem;
   cursor: pointer;
 }
+
+.btn3 {
+  border-style: solid;
+  border-color: red;
+  background-color: #0000ff;
+  color: #4f72cb;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.btn4 {
+  background-color: #0000ff;
+  color: #ff0000;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.notshow {
+  display: none;
+}
+
+.padding {
+  background-color: #0000ff;
+  color: #ff0000;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10rem 10rem;
+  cursor: pointer;
+}
+
 
 .first {
   font-family: Arial;
